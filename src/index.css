@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "bruno";
+  src: url("./assets/fonts/bruno/BrunoAceSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: "raleway-400";
+  src: url("./assets/fonts/raleway/static/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "raleway-500";
+  src: url("./assets/fonts/raleway/static/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "raleway-600";
+  src: url("./assets/fonts/raleway/static/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "raleway-700";
+  src: url("./assets/fonts/raleway/static/Raleway-Bold.ttf");
+}
+
+.typed-cursor {
+  color: #4070f4;
+  font-size: 32px;
+}
+
+#home {
+  color: white;
+  z-index: 1111;
+}
+
+body {
+  background: #000;
+  z-index: -22x;
+}
+
+.bg-whites {
+  position: absolute;
+  z-index: -1;
+  filter: blur(100px);
+  min-height: 70vh;
+  width: 100%;
+}
+.bg-whites .item-1 {
+  background: rgb(43, 46, 129);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: -2;
+  position: absolute;
+  top: -30%;
+  left: -10%;
+}
