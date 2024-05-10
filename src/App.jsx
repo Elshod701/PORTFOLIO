@@ -5,10 +5,11 @@ import { Contact } from "./pages/contact/contact";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./layout/layout";
 import { Projects } from "./pages/projects/projects";
-
+import UseScrollTop from "./hooks/scrollTop";
 const App = () => {
   return (
     <>
+      <UseScrollTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
