@@ -29,7 +29,7 @@
 
 .typed-cursor {
   color: #4070f4;
-  font-size: 32px;
+  font-size: 62px;
 }
 
 #home {
@@ -58,4 +58,19 @@ body {
   position: absolute;
   top: -30%;
   left: -10%;
+}
+#js-item {
+  box-shadow: 0px 0px 45px 20px rgb(255, 247, 0);
+}
+
+#css-item {
+  box-shadow: 0px 0px 45px 20px rgb(0, 64, 255);
+}
+
+#react-item {
+  box-shadow: 0px 0px 45px 20px rgb(0, 204, 255);
+}
+
+#tailwind-item {
+  box-shadow: 0px 0px 45px 20px rgb(0, 110, 255);
 }
