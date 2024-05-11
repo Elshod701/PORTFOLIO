@@ -42,14 +42,14 @@
 }
 
 body {
-  background: #000;
+  background: #000000;
 }
 
 .bg-whites {
   position: absolute;
   z-index: -1;
   filter: blur(100px);
-  min-height: 70vh;
+  height: auto;
   width: 100%;
 }
 .bg-whites .item-1 {
@@ -61,6 +61,16 @@ body {
   position: absolute;
   top: -30%;
   left: -10%;
+}
+.bg-whites .item-2 {
+  background: rgb(212, 0, 255);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: -2;
+  position: absolute;
+  top: 500px;
+  left: 25%;
 }
 /* ///////////////////////////// */
 #html-item {
@@ -101,4 +111,14 @@ body {
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+#scroll-up-btn {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }

@@ -10,8 +10,7 @@ import redux from "../../assets/icons/redux.png";
 import html from "../../assets/icons/html.png";
 import github from "../../assets/icons/github.png";
 import ts from "../../assets/icons/ts.png";
-import { Link, NavLink } from "react-router-dom";
-
+import { FaArrowUp } from "react-icons/fa";
 export const Home = () => {
   const el = React.useRef(null);
   React.useEffect(() => {
@@ -23,9 +22,27 @@ export const Home = () => {
       typed.destroy();
     };
   }, []);
-
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
+      <div className="bg-whites">
+        <div className="item-1"></div>
+        <div className="item-2"></div>
+      </div>
+
+      <div className="w-[100vw] h-[100vh] absolute">
+        <button
+          onClick={() => {
+            scrollTop();
+          }}
+          id="scroll-up-btn"
+          className="scroll-up-btn p-2 text-2xl text-white bg-transparent border-white border rounded-xl fixed bottom-[80px] right-[50px]"
+        >
+          <FaArrowUp />
+        </button>
+      </div>
       <header className="bg-slate-900">
         <div className="container bg-slate-900">
           <div className="nav flex items-center justify-between py-6">
@@ -34,10 +51,12 @@ export const Home = () => {
             </div>
 
             <div className="nav_lists flex items-center gap-6 text-white ">
-              <a href="#about" className="flex">
-                <span className="text-[#319584]">&lt;</span>
-                <p className="font-raleway-600">ABOUT ME</p>
-                <span className="text-[#319584]">&gt;</span>
+              <a href="#about">
+                <div className="flex">
+                  <span className="text-[#319584]">&lt;</span>
+                  <p className="font-raleway-600">ABOUT ME</p>
+                  <span className="text-[#319584]">&gt;</span>
+                </div>
               </a>
 
               <a href="#projects" className="flex">
@@ -57,12 +76,6 @@ export const Home = () => {
       </header>
 
       <section id="hero" className="pb-[70px]">
-        {/* for background */}
-        <div className="bg-whites">
-          <div className="item-1"></div>
-        </div>
-
-        {/* for content */}
         <div className="container">
           <div className="wrapper flex justify-between">
             <div className="content">
@@ -185,9 +198,9 @@ export const Home = () => {
         </div>
       </section>
 
-      <section id="about" className="py-10 bg-black text-white">
+      <section id="about" className="py-10 text-white">
         <div className="container">
-          <div className="content bg-slate-400 h-[650px]">
+          <div className="content border-white border p-4 h-[550px]">
             <div className="flex text-4xl">
               <span className="text-[#319584]">&lt;</span>
               <p className="font-raleway-600">ABOUT ME</p>
@@ -196,9 +209,9 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section id="projects" className="py-10 bg-black text-white">
+      <section id="projects" className="py-10  text-white">
         <div className="container">
-          <div className="content bg-slate-400 h-[650px]">
+          <div className="content border-white border p-4 h-[550px]">
             <div className="flex text-4xl">
               <span className="text-[#319584]">&lt;</span>
               <p className="font-raleway-600">MY PROJECTS</p>
@@ -207,9 +220,9 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section id="contact" className="py-10 bg-black text-white">
+      <section id="contact" className="py-10 text-white">
         <div className="container">
-          <div className="content bg-slate-400 h-[600px]">
+          <div className="content border-white border p-4 h-[600px]">
             <div className="flex text-4xl">
               <span className="text-[#319584]">&lt;</span>
               <p className="font-raleway-600">CONTACT</p>
